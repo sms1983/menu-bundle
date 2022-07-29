@@ -11,7 +11,7 @@
 
 namespace Symfony\Cmf\Bundle\MenuBundle\Provider;
 
-use Doctrine\Common\Persistence\ManagerRegistry;
+use Doctrine\Bundle\PHPCRBundle\ManagerRegistry;
 use Doctrine\ODM\PHPCR\DocumentManager;
 use Jackalope\Session;
 use Knp\Menu\ItemInterface;
