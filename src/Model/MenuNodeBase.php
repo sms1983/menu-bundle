@@ -172,7 +172,7 @@ class MenuNodeBase implements NodeInterface
     /**
      * {@inheritdoc}
      */
-    public function getName()
+    public function getName(): string
     {
         return $this->name;
     }
@@ -573,7 +573,7 @@ class MenuNodeBase implements NodeInterface
     /**
      * {@inheritdoc}
      */
-    public function getOptions()
+    public function getOptions(): array
     {
         return [
             'uri' => $this->getUri(),
