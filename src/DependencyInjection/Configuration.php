@@ -20,7 +20,7 @@ class Configuration implements ConfigurationInterface
 {
     public function getConfigTreeBuilder()
     {
-        $treeBuilder = new TreeBuilder();
+        $treeBuilder = new TreeBuilder('sms-menu-bundle');
 
         $treeBuilder->root('cmf_menu')
             ->fixXmlConfig('voter')
