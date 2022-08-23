@@ -22,7 +22,7 @@ class Configuration implements ConfigurationInterface
     {
         $treeBuilder = new TreeBuilder('sms-menu-bundle');
 
-        $treeBuilder->root('cmf_menu')
+        $treeBuilder->getRootNode()
             ->fixXmlConfig('voter')
             ->children()
                 ->arrayNode('persistence')
