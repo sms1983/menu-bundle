@@ -40,7 +40,7 @@ class VotingNodeLoader extends NodeLoader
         $this->dispatcher = $dispatcher;
     }
 
-    public function load($data)
+    public function load($data): \Knp\Menu\ItemInterface
     {
         if (!$this->supports($data)) {
             throw new \InvalidArgumentException(sprintf(
