@@ -67,7 +67,7 @@ class QuietFactory implements FactoryInterface
             }
 
             if (!$this->allowEmptyItems) {
-                return;
+                return null;
             }
 
             // remove route and content options
