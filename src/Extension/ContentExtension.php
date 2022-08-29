@@ -45,7 +45,7 @@ class ContentExtension implements ExtensionInterface
      *
      * @return array
      */
-    public function buildOptions(array $options)
+    public function buildOptions(array $options): array
     {
         $options = array_merge([
             'content' => null,
