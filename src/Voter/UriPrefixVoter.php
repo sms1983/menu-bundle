@@ -72,7 +72,7 @@ class UriPrefixVoter implements VoterInterface
     {
         $request = $this->getRequest();
         if (!$request) {
-            return;
+            return null;
         }
 
         $content = $item->getExtra('content');

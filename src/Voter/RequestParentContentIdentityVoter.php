@@ -87,7 +87,7 @@ class RequestParentContentIdentityVoter implements VoterInterface
     {
         $request = $this->getRequest();
         if (!$request) {
-            return;
+            return null;
         }
 
         $content = $item->getExtra('content');

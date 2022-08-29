@@ -26,7 +26,7 @@ class DecorateMenuFactoryPass implements CompilerPassInterface
     public function process(ContainerBuilder $container)
     {
         if (!$container->hasDefinition('knp_menu.factory')) {
-            return;
+            return null;
         }
 
         $knpFactory = $container->getDefinition('knp_menu.factory');
