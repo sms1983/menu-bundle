@@ -86,7 +86,7 @@ class ContentExtension implements ExtensionInterface
      * @param ItemInterface $item
      * @param array         $options
      */
-    public function buildItem(ItemInterface $item, array $options)
+    public function buildItem(ItemInterface $item, array $options): void
     {
     }
 
