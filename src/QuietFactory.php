@@ -54,7 +54,7 @@ class QuietFactory implements FactoryInterface
     /**
      * {@inheritdoc}
      */
-    public function createItem($name, array $options = [])
+    public function createItem(string $name, array $options = []): \Knp\Menu\ItemInterface
     {
         try {
             return $this->innerFactory->createItem($name, $options);
