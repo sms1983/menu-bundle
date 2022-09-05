@@ -49,7 +49,7 @@ class VotingNodeLoader extends NodeLoader
             ));
         }
         $event = new CreateMenuItemFromNodeEvent($data);
-        $this->dispatcher->dispatch(Events::CREATE_ITEM_FROM_NODE, $event);
+        $this->dispatcher->dispatch($event, Events::CREATE_ITEM_FROM_NODE);
 
         if ($event->isSkipNode()) {
             if ($data instanceof Menu) {
