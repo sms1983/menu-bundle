@@ -13,7 +13,7 @@ namespace Symfony\Cmf\Bundle\MenuBundle\Event;
 
 use Knp\Menu\ItemInterface;
 use Knp\Menu\NodeInterface;
-use Symfony\Component\EventDispatcher\Event;
+use Symfony\Contracts\EventDispatcher\Event;
 
 /**
  * This event is raised when a menu node is to be transformed into a menu item.
