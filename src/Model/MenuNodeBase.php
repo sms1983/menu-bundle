@@ -349,7 +349,7 @@ class MenuNodeBase implements NodeInterface
      *
      * @return NodeInterface[]
      */
-    public function getChildren(): \Traversable
+    public function getChildren(): array
     {
         $children = [];
         foreach ($this->children as $child) {
