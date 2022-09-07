@@ -84,6 +84,8 @@ class UriPrefixVoter implements VoterInterface
                 return true;
             }
         }
+
+        return false;
     }
 
     private function getRequest()
